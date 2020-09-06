@@ -2,8 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 
-const TestComponent1 = dynamic(() => import('../components/TestComponent1/TestComponent1'));
-const TestComponent2 = dynamic(() => import('../components/TestComponent2/TestComponent2'));
+const TestComponent = dynamic(() => import('../components/TestComponent/TestComponent'));
 
 function HomePage() {
   return (
@@ -12,8 +11,7 @@ function HomePage() {
       <Link href="/">
         <a>Home page</a>
       </Link>
-      <TestComponent1 />
-      <TestComponent2 />
+      <TestComponent />
     </div>
   );
 }
