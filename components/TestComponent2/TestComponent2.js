@@ -1,5 +1,7 @@
+import React from 'react';
 import styles from './TestComponent2.module.scss';
+import dynamic from 'next/dynamic';
 
 export default function TestComponent2() {
-	return <div className={`style0 ${styles.style2}`}>Test component 2</div>
+  return <div className={styles.style2}>I should be cyan!</div>;
 }
