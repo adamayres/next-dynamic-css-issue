@@ -12,11 +12,11 @@ Components that use `next/dynamic` to load and that have a CSS module lose thier
 
 ## Expected results
 
-TestComponent 1 and TestComponent 2 should retain their styles.
+TestComponent should retain their styles.
 
 ## Actaul results
 
-TestComponent 1 and TestComponent 2 do not retain their styles.
+TestComponent lose their styles.
 
 ## Notes
 
