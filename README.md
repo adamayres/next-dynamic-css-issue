@@ -22,4 +22,4 @@ TestComponent 1 and TestComponent 2 do not retain their styles.
 
 This issue only occurs when navigating via page links, direct access to the `index` or `other-page` load the CSS correctly.
 
-This bug appears to have been introduced as a regression from https://github.com/vercel/next.js/pull/12843 that fixed a related issue, [#10557](https://github.com/vercel/next.js/issues/10557), where there is a flash of unstyled content when navigating to a page that contains a dynamically loaded component 
+This bug appears to have been introduced as a regression from [12843](https://github.com/vercel/next.js/pull/12843) that fixed a related issue, [#10557](https://github.com/vercel/next.js/issues/10557), where there is a flash of unstyled content when navigating to a page that contains a dynamically loaded component. I verifed that this new issue is not present in 9.5.3-canary.20, but is present on 9.5.3-canary.21 and is currently present in 9.5.3.
